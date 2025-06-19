@@ -3,11 +3,11 @@ import { Link } from "react-router";
 
 export default function Footer() {
   return (
-    <footer className="p-8 px-24 bg-slate-400">
+    <footer className="p-8 lg:px-24 bg-slate-400">
       <ul className="flex flex-row items-center justify-around text-white gap-x-32">
         <Logo />
 
-        <li className="flex flex-row items-center justify-around gap-x-8">
+        <li className="lg:flex hidden flex-row items-center justify-around gap-x-8">
           <li>
             <h4 className="font-bold text-xl ps-2">Links</h4>
             <ul className="flex flex-col">
@@ -33,6 +33,10 @@ export default function Footer() {
           </li>
         </li>
       </ul>
+      <p className="text-center pt-4">
+        Developed by{" "}
+        <a href="https://www.github.com/Pedraum1" target="_blank" className="underline">Pedrão</a>
+      </p>
     </footer>
   );
 }

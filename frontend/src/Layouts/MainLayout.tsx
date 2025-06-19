@@ -9,7 +9,7 @@ export default function MainLayout() {
         <Navbar />
       </header>
 
-      <main className="flex-grow mx-auto w-2/3 py-8">
+      <main className="flex-grow mx-auto lg:w-2/3 lg:px-0 px-4 w-full py-8">
         {<Outlet />}
       </main>
       
