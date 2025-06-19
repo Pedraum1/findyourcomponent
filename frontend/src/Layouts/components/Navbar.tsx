@@ -1,4 +1,4 @@
-import Logo from "@/Views/Components/Logo";
+import Logo from "@/Components/Logo";
 import { Link } from "react-router";
 
 export default function Navbar() {
@@ -21,7 +21,10 @@ export default function Navbar() {
 function NavLink({ to, children }: { to: string; children: React.ReactNode }) {
   return (
     <li>
-      <Link to={to} className="border-b border-transparent hover:border-white px-2">
+      <Link
+        to={to}
+        className="border-b border-transparent hover:border-white px-2"
+      >
         {children}
       </Link>
     </li>
